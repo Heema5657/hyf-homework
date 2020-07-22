@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Step1a.css">
+</head>
+<body>
+    <header>
+         <p id="logo">Logo</p> 
+         <p id="navigate">Navigation</p>
+    </header>
+    <main>
+        <h1>Sign up to yourcustomtailor.com</h1>
+        <p>We can’t wait to help you improve your life-style and gain the attention from people around
+           you!
+        </p>
+         <p>Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy
+            picking the best offers that match your preferences and style. Every week we will send you a
+            hand-picked selection - we just need to know a few details about your first…
+        </p>
+        <form action="" method="get" id="step1a">
+            <h1>Step 1/4 - tell us who you are?</h1>
+            <label for="step1a">Progress:</label>
+            <progress id="step1a" value="0.25" max="4"></progress>
+            <p>Nice to meet you. Let’s spend a minute to get to know each other? Please enter the following:</p>
+            <section>
+                <div class="sec1">
+                    <div class="sector1">
+                        <label for="fname">First name*</label>
+                    </div>
+                    <div class="sector1">
+                        <label for="cname">Country*</label>
+                    </div>
+                    <div class="sector1">
+                        <label for="sadd">Street address*</label>
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="sector2">
+                        <input type="text" id="fname" name="fname" required><br><br>
+                    </div>
+                    <div class="sector2">
+                        <select id="cname" name="cname" required><br><br>
+                            <option value=""></option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Norway">Norway</option>
+                        </select><br><br>
+                    </div>
+                    <div class="sector2">
+                        <input type="text" id="sadd" name="sadd" required><br><br>
+                    </div>  
+                </div>
+                <div class="secwid">
+                    <div class="sec1">
+                        <div class="sector2">
+                            <label for="lname">Last name*</label>
+                        </div><br>
+                        <div class="sector2">
+                        </div><br><br>
+                        <div class="sector2">
+                            <label for="pcode">Post code*</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="sector2">
+                        <input type="text" id="lname" name="lname" required><br><br>
+                    </div>
+                    <div class="sector2">
+                    <br><br>
+                    </div>
+                    <div class="sector2">
+                        <input type="text" id="pcode" name="pcode" required><br><br>
+                    </div>  
+                </div>
+            </section>
+            <br>
+            <section>
+                <div class="sec1">
+                    <div>
+                        <label for="pdesc">Profile Description</label></br></br>
+                        <p id="special">Please provide a short </br>
+                            description of yourself to be</br>
+                            displayed on our social</br>
+                            community pages. 
+                        </p>
+                    </div>
+                </div>
+                <div class="sec1">
+                    <div class="sector3">
+                        <textarea type="text" id="pdesc" name="pdesc"></textarea>   
+                    </div>
+                </div>
+            </section>
+            <br>
+            <p>Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address.</p>
+            <section>
+                <div class="sec1">
+                    <div class="sector1">
+                        <div id="sec1">
+                            <label for="shipadd"> Shipping address</label><br>
+                        </div>
+                    </div>
+                </div>
+                    <div id="sec1">
+                        <input type="checkbox" id="shipadd" name="shipadd" value="Shipping Address" checked>
+                        <br>
+                            <div class="shipping">
+                                <div class="sec1">
+                                    <h4>Shipping address</h4>
+                                    <br>
+                                    <div class="sector1">
+                                        <label for="fname">First name*</label>
+                                    </div>
+                                    <div class="sector1">
+                                        <label for="cname">Country*</label>
+                                    </div>
+                                    <div class="sector1">
+                                        <label for="sadd">Street address*</label>
+                                    </div>
+                                </div>
+                                <div class="sec1">
+                                    <div class="sector2">
+                                        <input type="text" id="fname" name="fname" ><br><br>
+                                    </div>
+                                    <div class="sector2">
+                                        <select id="cname" name="cname"><br><br>
+                                            <option value=""></option>
+                                            <option value="Denmark">Denmark</option>
+                                            <option value="Sweden">Sweden</option>
+                                            <option value="Norway">Norway</option>
+                                        </select><br><br>
+                                    </div>
+                                    <div class="sector2">
+                                        <input type="text" id="sadd" name="sadd" ><br><br>
+                                    </div>  
+                                </div>
+                                <div class="secwid">
+                                    <div class="sec1">
+                                        <div class="sector2">
+                                            <label for="lname">Last name*</label>
+                                        </div><br>
+                                        <div class="sector2">
+                                        </div><br><br>
+                                        <div class="sector2">
+                                            <label for="pcode">Post code*</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sec1">
+                                    <div class="sector2">
+                                        <input type="text" id="lname" name="lname" ><br><br>
+                                    </div>
+                                    <div class="sector2">
+                                    <br><br>
+                                    </div>
+                                    <div class="sector2">
+                                        <input type="text" id="pcode" name="pcode" ><br><br>
+                                    </div>  
+                                </div>
+                            </div>
+                    </div>
+            </section>
+            <br>
+            <div id="button">
+                <a href="Step2.html">Next Step
+                </a>
+            </div>
+        </form>
+    </main>  
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Step1a.css">
+</head>
+<body>
+    <header>
+         <p id="logo">Logo</p> 
+         <p id="navigate">Navigation</p>
+    </header>
+    <main>
+        <h1>Sign up to yourcustomtailor.com</h1>
+        <p>We can’t wait to help you improve your life-style and gain the attention from people around
+           you!
+        </p>
+         <p>Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy
+            picking the best offers that match your preferences and style. Every week we will send you a
+            hand-picked selection - we just need to know a few details about your first…
+        </p>
+        <form action="" method="get" id="step1a">
+            <h1>Step 4/4 - Payments</h1>
+            <label for="step1a">Progress:</label>
+            <progress id="step1a" value="3.75" max="4"></progress>
+            <p>Please fill in your payment data</p>
+            <section>
+                <div id="part1">
+                    <label for="ncard">Name on card</label>
+                    <input type="text" id="ncard" name="ncard" ><br><br>
+                    <div id="selectcard">
+                    <label for="tcard">Card Type</label>
+                    <select name="tcard" id="tcard">
+                      <option value=""></option>
+                      <option value="visa">Visa</option>
+                      <option value="master">Master</option>
+                    </select>
+                    </div><br>
+                    <div>
+                        <label for="ccnumber">Credit card number</label>
+                        <input type="number" id="ccnumber" name="ccnumber" ><br><br>
+                    </div>
+                    <div id="align_exp">
+                        <div id="expm"> 
+                            <label for="expm">Expiry month</label>
+                            <input type="number" id="expm" name="expm" >
+                        </div>
+                        <div id="expm"> 
+                            <label for="expy">Expiry year</label>
+                            <input type="number" id="expy" name="expy" >
+                        </div>
+                    </div>
+                    <label for="cvvn">Cvv</label>
+                    <input type="number" id="cvvn" name="cvvn" ><br><br>
+                </div>
+                <div id="arrange_next">
+                    <label for="firname">First name</label>
+                    <input type="text" id="firname" name="firname" ><br><br>
+                </div>
+            </section>
+            <div id="button">
+                <button type="submit">Next Step</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

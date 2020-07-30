@@ -1,9 +1,9 @@
-let dogYearOfBirth = 2005;
-let dogYearFuture = 2023;
+const dogYearOfBirth = 2005;
+const dogYearFuture = 2023;
 
-let dogYear = dogYearFuture - dogYearOfBirth;
+const dogYear = dogYearFuture - dogYearOfBirth;
 shouldShowResultInDogYears = false;
-let humanYear = dogYear * 7;
+const humanYear = dogYear * 7;
 let year;
 if(shouldShowResultInDogYears){
     year = dogYear + " " + "dog years";

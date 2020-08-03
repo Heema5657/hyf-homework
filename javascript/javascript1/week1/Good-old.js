@@ -2,7 +2,7 @@ const dogYearOfBirth = 2005;
 const dogYearFuture = 2023;
 
 const dogYear = dogYearFuture - dogYearOfBirth;
-shouldShowResultInDogYears = false;
+let shouldShowResultInDogYears = true;
 const humanYear = dogYear * 7;
 let year;
 if(shouldShowResultInDogYears){

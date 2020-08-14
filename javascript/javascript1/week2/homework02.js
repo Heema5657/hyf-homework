@@ -7,8 +7,8 @@ function getFullName(firstname, surname, useFormalName){
         return firstname + ' ' + surname ;
     }
 }
-const fullname1 = (getFullName('Heema','Negandhi', true));
-const fullname2 = (getFullName('Karolina', 'Urnieziute'));
+const fullname1 = getFullName('Heema','Negandhi', true);
+const fullname2 = getFullName('Karolina', 'Urnieziute');
 console.log(fullname1);
 console.log(fullname2);
 
@@ -23,7 +23,7 @@ function getEventWeekday(number){
 console.log(getEventWeekday(1));
 
 // Exercise 3 
-function youCreateThisFunctionName(tempearture){
+function whichClothesToWear(tempearture){
     if(tempearture <= 0){
         console.log('Wear Winter wear')
     }
@@ -37,7 +37,7 @@ function youCreateThisFunctionName(tempearture){
         console.log('Wear summer wear')
     }
 }
-const clothesToWear = youCreateThisFunctionName(15);
+const clothesToWear = whichClothesToWear(15);
 console.log(clothesToWear);
 
 // Exercise 4
@@ -45,14 +45,16 @@ console.log(clothesToWear);
 const class07Students = [];
 function addStudentToClass(studentName) {
     // You write code here
+    let nameStudent =studentName.toLowerCase()
 if(studentName === ''){
         return 'This cannot be added.';
 }
+else if (nameStudent === 'queen' && !class07Students.includes(nameStudent)){
+    return class07Students.push(studentName);
+
+}
 else if(class07Students.includes(studentName)){
     return `${studentName} is already in the class.`;
-}
-else if (studentName === 'queen'){
-    return class07Students.push(studentName);
 }
 else if(class07Students.length >= 6 ){
     return'Cannot add more students to class 07';
@@ -70,6 +72,7 @@ console.log(addStudentToClass('Pankaj'));
 console.log(addStudentToClass('Sowmya'));
 console.log(addStudentToClass(''));
 console.log(addStudentToClass('queen'));
+console.log(addStudentToClass('Queen'));
 console.log(class07Students);
 
 function getNumberOfStudents() {

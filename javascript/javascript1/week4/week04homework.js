@@ -1,4 +1,4 @@
-let listToDo =[];
+const listToDo =[];
 console.log(listToDo);
 function getReply(command){
     if(command == 'What is my name'){
@@ -50,7 +50,7 @@ function getReply(command){
         console.log(`"Timer set for ${time} minutes"`);
         setTimeout(function(){console.log('Timer done')},timeToMiliseconds);
     }
-    else if(typeof command == 'string'){ 
+    else if(command == 'Hello my name is Benjamin'){ 
         let nameOfString = command.substr(-8);
         console.log(`"Nice to meet you ${nameOfString}"`);    
     }
@@ -58,7 +58,7 @@ function getReply(command){
         console.log('error');
     }
 }
-console.log(getReply("Hello my name is Benjamin"));
+console.log(getReply('Hello my name is Benjamin'));
 console.log(getReply('What is my name'));
 console.log(getReply('Add fishing to my todo'));
 console.log(getReply('Add singing in the shower to my todo'));

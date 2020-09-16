@@ -1,15 +1,19 @@
 //Write a function that finds the shortest word of an array of words
 const danishWords = ["bil", "plante", "kaffe", "bog", "ø", "planetarium"];
 const lengthOfArray = danishWords.length;
+let firstValue = danishWords[0];
+let shortestWord;
 function shortestWords(danishWords) {
   for (let i = 0; i < lengthOfArray; i++) {
     let arraysIndexLen = danishWords[i].length;
     console.log(arraysIndexLen);
-    if (arraysIndexLen <= 1) {
-      return danishWords[i];
+    if (arraysIndexLen <= firstValue.length) {
+      shortestWord = danishWords[i];
     }
   }
+  return shortestWord;
 }
+
 console.log(shortestWords(danishWords));
 
 //Find the individual number and the total number of Danish letters in a string.

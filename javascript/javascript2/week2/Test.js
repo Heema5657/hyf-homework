@@ -43,20 +43,21 @@ const movies = [
   },
 ];
 // 1 - the movies with a short title
-let arrayOfShortMoviesTitle = movies
-  .map((shortTitle) => shortTitle.title)
-  .filter((movieTitle) => movieTitle.length < 8);
-console.log(arrayOfShortMoviesTitle);
+let arrayOfShortMoviesTitle = movies.map((shortTitle) => shortTitle.title);
+// 3 the number of movies made between 1980-1989
+let arrayOfMoviesInYear = movies.map((title) => title.year);
 // 2 - the movies with a long title
 let arrayOfLongMoviesTitle = movies
   .map((longTitle) => longTitle.title)
-  .filter((movieTitle) => movieTitle.length > 8);
-console.log(arrayOfLongMoviesTitle);
-// 3 the number of movies made between 1980-1989
-let arrayOfMoviesInYear = movies
-  .map((title) => title.year)
-  .filter((Title) => Title >= 1980 && Title <= 1989).length;
-console.log(arrayOfMoviesInYear);
+  .filter((movieTitle) => {
+    if (movieTitle.length > 8) {
+      console.log(arrayOfLongMoviesTitle);
+    } else if (movieTitle.length < 8) {
+      console.log(arrayOfShortMoviesTitle);
+    } else if ((movieTitle >= 1980 && movieTitle <= 1989).length) {
+      console.log(arrayOfMoviesInYear);
+    }
+  });
 
 // 4 the extra key called tag
 const newM = movies.filter((movie) => {

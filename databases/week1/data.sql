@@ -2,7 +2,7 @@
 SELECT count(id)
 FROM task
 -- 2 task
-SELECT title, due_date
+SELECT count(title)
 FROM task
 WHERE due_date IS NULL;
 -- 3 task
@@ -31,8 +31,11 @@ SELECT title, due_date
 FROM TASK
 WHERE title LIKE '%database%' OR description LIKE '%database%';
 -- 8 task
+-- SELECT TASK.TITLE, STATUS.NAME
+-- FROM TASK, STATUS
+-- WHERE (TASK.STATUS_ID = STATUS.ID);
 SELECT TASK.TITLE, STATUS.NAME
-FROM TASK, STATUS
+FROM (task inner join status )
 WHERE (TASK.STATUS_ID = STATUS.ID);
 -- 9 task
 SELECT count(STATUS.NAME), status.name
@@ -40,8 +43,8 @@ FROM TASK, STATUS
 WHERE TASK.STATUS_ID = STATUS.ID
 group by status.name
 -- 10 task
-SELECT count(STATUS.NAME), status.name
+SELECT count(STATUS.NAME) AS 'Name', status.name
 FROM TASK, STATUS
 WHERE TASK.STATUS_ID = STATUS.ID
-group by status.name
-order by count(status.name)
+group by Name
+order by Name;

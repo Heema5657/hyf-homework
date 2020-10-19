@@ -18,7 +18,7 @@ create table `student`
 (50) not null,
 `email` varchar
 (50) not null,
-`phone` int
+`phone` VARCHAR
 (8) not null,
 `class_id` int not null,
 PRIMARY KEY

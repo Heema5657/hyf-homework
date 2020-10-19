@@ -43,5 +43,11 @@ CREATE TABLE `order` (
     REFERENCES `customer`(`customer_id`)
 );
 
+insert into product VALUES(null,'Vada Pav','60','1','spicy'),
+(null,'Pav Bhaji','90','1','hot');
 
+INSERT into customer values(null,'Ankit','ankit@gmail.com','34569872','husum hovedgade 58C','02 TV','2560','super-good'),
+(null,'Viral','viral@yahoo.com','24569871','buddinge hovedgade 128A','ST TV','2880','good');
 
+insert into `order` values(null,'4','20','delivery','Pack extra chutney','no','300','15','2020-10-19','2020-10-19','2','2'),
+(null,'2','10','takeaway','extra butter','no chilli','150','7.5','2020-10-19','2020-10-19','1','1');
